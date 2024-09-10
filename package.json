@@ -4,7 +4,7 @@
   "description": "In this assignment, you will use the GreenSock Animation Platform (GSAP), fetch data from the PokeAPI/Valorant API, and create animations to display a list of Pokémon/Valorant Agents.",
   "main": "index.js",
   "scripts": {
-    "build:css": "sass -w src/sass:css",
+    "build:css": "sass -w sass:css",
     "live": "live-server --verbose",
     "dev": "concurrently \"npm run build:css\" \"npm run live\""
   },

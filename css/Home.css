@@ -1,0 +1,112 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@media only screen and (max-width: 599px) {
+  #HomePage .Poster {
+    flex-direction: column;
+    align-items: center;
+  }
+  #HomePage .Poster h1 {
+    font-size: 28px !important;
+    bottom: 48% !important;
+  }
+  #HomePage .Poster h2 {
+    font-size: 20px !important;
+    bottom: 44% !important;
+  }
+  #HomePage .Poster #PokemonPart {
+    width: 100% !important;
+    height: 50% !important;
+  }
+  #HomePage .Poster #ValPart {
+    align-items: center;
+    width: 100% !important;
+    height: 50% !important;
+  }
+}
+@media only screen and (min-width: 600px) and (max-width: 999px) {
+  #HomePage .Poster {
+    flex-direction: column;
+    align-items: center;
+  }
+  #HomePage .Poster h1 {
+    font-size: 40px !important;
+    bottom: 46% !important;
+  }
+  #HomePage .Poster h2 {
+    font-size: 32px !important;
+    bottom: 40% !important;
+  }
+  #HomePage .Poster #PokemonPart {
+    width: 100% !important;
+    height: 50% !important;
+  }
+  #HomePage .Poster #ValPart {
+    align-items: center;
+    width: 100% !important;
+    height: 50% !important;
+  }
+}
+#HomePage .Poster {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  position: relative;
+}
+#HomePage .Poster h1 {
+  color: white;
+  text-shadow: 3px 3px 3px black, -3px -3px 3px black, -3px 3px 3px black, 3px -3px 3px black, 3px 0px 3px black, -3px 0px 3px black, 0px 3px 3px black, 0px -3px 3px black;
+  position: absolute;
+  font-size: 48px;
+  z-index: 1;
+  bottom: 7%;
+}
+#HomePage .Poster h1 #HomeTitlePoke {
+  color: yellow;
+  text-shadow: 3px 3px 3px blue, -3px -3px 3px blue, -3px 3px 3px blue, 3px -3px 3px blue, 3px 0px 3px blue, -3px 0px 3px blue, 0px 3px 3px blue, 0px -3px 3px blue;
+}
+#HomePage .Poster h1 #HomeTitleVal {
+  color: red;
+  text-shadow: 3px 3px 3px black, -3px -3px 3px black, -3px 3px 3px black, 3px -3px 3px black, 3px 0px 3px black, -3px 0px 3px black, 0px 3px 3px black, 0px -3px 3px black;
+}
+#HomePage .Poster h2 {
+  color: white;
+  text-shadow: 3px 3px 3px black, -3px -3px 3px black, -3px 3px 3px black, 3px -3px 3px black, 3px 0px 3px black, -3px 0px 3px black, 0px 3px 3px black, 0px -3px 3px black;
+  position: absolute;
+  font-size: 40px;
+  z-index: 1;
+  bottom: 0%;
+}
+#HomePage .Poster #PokemonPart {
+  display: flex;
+  justify-content: center;
+  background-color: aquamarine;
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+}
+#HomePage .Poster #PokemonPart #PokPoster {
+  height: 100%;
+  filter: brightness(30%);
+}
+#HomePage .Poster #PokemonPart #PokPoster:hover {
+  filter: brightness(100%);
+}
+#HomePage .Poster #ValPart {
+  display: flex;
+  justify-content: center;
+  width: 50%;
+  overflow: hidden;
+}
+#HomePage .Poster #ValPart #valPoster {
+  height: 100%;
+  filter: brightness(30%);
+}
+#HomePage .Poster #ValPart #valPoster:hover {
+  filter: brightness(100%);
+}
+
+/*# sourceMappingURL=Home.css.map */

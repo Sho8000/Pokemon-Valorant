@@ -1,0 +1,284 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.veryFirstAnimation {
+  display: flex;
+  overflow-x: hidden;
+  width: 100vw;
+  height: 100vh;
+  left: 100vw;
+  background-color: white;
+  position: fixed;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+.veryFirstAnimation img {
+  position: absolute;
+  width: 100%;
+}
+
+.FetchBtn {
+  height: 50px;
+  font-size: 24px;
+  font-weight: 600;
+  background-color: rgb(238, 194, 0);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 3px 3px 10px 0 rgb(202, 165, 0);
+  margin: 0 1.5rem;
+  padding: 10px 20px;
+}
+
+@media only screen and (max-width: 684px) {
+  .FetchBtn {
+    height: 40px !important;
+    font-size: 16px !important;
+    margin-bottom: 1rem !important;
+  }
+  .MonsterBall {
+    display: none;
+  }
+  .Link {
+    order: -1;
+    border-bottom: black solid 1px;
+    width: 100%;
+    justify-content: center;
+  }
+  .Link #PokeHomeText {
+    display: none;
+  }
+  .Link #PokeHomeIMG {
+    display: block !important;
+    width: 50px !important;
+  }
+  .Link #PokeLinkText {
+    display: none;
+  }
+  .Link #PokeLinkBall {
+    display: block !important;
+    width: 50px !important;
+  }
+  .Link #valorantText {
+    display: none;
+  }
+  .Link #valorantIMG {
+    display: block !important;
+    width: 50px !important;
+  }
+  .mainContainer {
+    background-image: url(../resource/PokeBack2Phone.png) !important;
+    padding: 0 !important;
+  }
+  .mainContainer .titleArea {
+    flex-direction: column;
+    margin: 0 !important;
+  }
+  .mainContainer .titleArea #TitleLogo {
+    height: 120px !important;
+    margin: auto !important;
+  }
+  .mainContainer .tableArea {
+    background-color: transparent !important;
+    padding: 0 !important;
+  }
+  .mainContainer .tableArea .PokemonGrid {
+    grid-template-columns: 1fr;
+  }
+}
+@media only screen and (min-width: 685px) and (max-width: 999px) {
+  .FetchBtn {
+    height: 40px !important;
+    font-size: 20px !important;
+    margin-bottom: 1rem !important;
+  }
+  .MonsterBall {
+    display: none;
+  }
+  .Link {
+    order: -1;
+    border-bottom: black solid 1px;
+    width: 100%;
+    justify-content: center;
+  }
+  .Link #PokeHomeText {
+    display: none;
+  }
+  .Link #PokeHomeIMG {
+    display: block !important;
+    width: 50px !important;
+  }
+  .Link #PokeLinkText {
+    display: none;
+  }
+  .Link #PokeLinkBall {
+    display: block !important;
+    width: 50px !important;
+  }
+  .Link #valorantText {
+    display: none;
+  }
+  .Link #valorantIMG {
+    display: block !important;
+    width: 50px !important;
+  }
+  .mainContainer {
+    background-image: url(../resource/PokeBack2Phone.png) !important;
+    padding: 0 !important;
+  }
+  .mainContainer .titleArea {
+    flex-direction: column;
+    margin: 0 !important;
+  }
+  .mainContainer .titleArea #TitleLogo {
+    height: 120px !important;
+    margin: auto !important;
+  }
+  .mainContainer .tableArea {
+    margin: 1rem !important;
+  }
+  .mainContainer .tableArea .PokemonGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media only screen and (min-width: 1000px) and (max-width: 1354px) {
+  .mainContainer .titleArea #TitleLogo {
+    margin-right: 10px !important;
+  }
+  .mainContainer .titleArea .Link {
+    gap: 1rem;
+  }
+  .mainContainer .titleArea .Link a {
+    margin: 0rem !important;
+  }
+  .mainContainer .tableArea .PokemonGrid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media only screen and (min-width: 1355px) {
+  .mainContainer .tableArea .PokemonGrid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+.mainContainer {
+  background-image: url(../resource/PokeBack2.png);
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 30px 20px;
+}
+.mainContainer .titleArea {
+  display: flex;
+  margin-left: 1rem;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+.mainContainer .titleArea #TitleLogo {
+  height: 150px;
+  margin-right: 50px;
+}
+.mainContainer .titleArea .FetchArea {
+  display: flex;
+  align-items: center;
+}
+.mainContainer .titleArea .MonsterBall {
+  height: 50px;
+}
+.mainContainer .titleArea .Link {
+  display: flex;
+  margin-left: auto;
+  transform: translateX(-1%);
+}
+.mainContainer .titleArea .Link a {
+  margin: 1rem;
+  font-size: 20px;
+}
+.mainContainer .tableArea {
+  background-color: rgba(245, 245, 245, 0.446);
+  border-radius: 10px;
+  padding: 1rem;
+}
+.mainContainer .tableArea .PokemonGrid {
+  display: grid;
+  grid-template-rows: auto;
+  gap: 1rem;
+  place-content: center;
+  /* This container is needed to position the front and back side */
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  /* Position the front and back side */
+  /* Style the front side (fallback if image is missing) */
+  /* Style the back side */
+}
+.mainContainer .tableArea .PokemonGrid .flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 420px;
+  border: 1px solid #f1f1f1;
+  margin: auto;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+.mainContainer .tableArea .PokemonGrid .chara-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+.mainContainer .tableArea .PokemonGrid .flip-card:hover .chara-card-inner {
+  transform: rotateY(180deg);
+}
+.mainContainer .tableArea .PokemonGrid .chara-card-front, .mainContainer .tableArea .PokemonGrid .chara-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+.mainContainer .tableArea .PokemonGrid .chara-card-front img, .mainContainer .tableArea .PokemonGrid .chara-card-back img {
+  width: 100%;
+  border-radius: 10px;
+}
+.mainContainer .tableArea .PokemonGrid .chara-card-front {
+  background-color: #bbb;
+}
+.mainContainer .tableArea .PokemonGrid .chara-card-front h2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+  color: rgb(255, 174, 0);
+  text-shadow: 3px 3px 3px blue, -3px -3px 3px blue, -3px 3px 3px blue, 3px -3px 3px blue, 3px 0px 3px blue, -3px 0px 3px blue, 0px 3px 3px blue, 0px -3px 3px blue;
+}
+.mainContainer .tableArea .PokemonGrid .chara-card-back {
+  background-image: url(../resource/battleBackground.png);
+  background-size: cover;
+  color: white;
+  transform: rotateY(180deg);
+  border-radius: 10px;
+}
+.mainContainer .tableArea .PokemonGrid .chara-card-back h2 {
+  margin-top: 2rem;
+  color: rgb(255, 174, 0);
+  text-shadow: 3px 3px 3px blue, -3px -3px 3px blue, -3px 3px 3px blue, 3px -3px 3px blue, 3px 0px 3px blue, -3px 0px 3px blue, 0px 3px 3px blue, 0px -3px 3px blue;
+}
+.mainContainer .tableArea .PokemonGrid .chara-card-back .PokemonIMG {
+  width: 250px;
+}
+
+.bottomContainer {
+  padding: 40px 20px;
+  display: flex;
+  margin-left: 1rem;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+}
+.bottomContainer .MonsterBall {
+  height: 50px;
+}
+
+/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,269 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.hide{
+  display: none !important;
+}
+
+.ValContainer{
+  min-height: 100vh;
+  background-image: url(../resource/ValBackPhone.png);
+  background-size: cover;
+  background-attachment: fixed;
+  overflow-x: hidden;
+  @media only screen and (max-width:430px){
+    .header{
+      flex-direction: column;
+      h1{
+        font-size: 28px;
+      }
+      ul{
+        order: -1;
+        margin: auto;
+        .PC{
+          display: none;
+        }
+        #homeLink{
+          width: 50px;
+        }
+        #BallLink{
+          width: 50px;
+        }
+        #valLink{
+          height: 40px;
+        }
+      }  
+    }
+    .ValCharaContainer{
+      flex-direction: column !important;
+    }  
+  }
+  @media only screen and (min-width:431px)and (max-width:675px){
+    background-image: url(../resource/ValBack.png);
+    .header{
+      flex-direction: column;
+      ul{
+        order: -1;
+        margin: auto;
+        .PC{
+          display: none;
+        }
+        #homeLink{
+          width: 50px;
+        }
+        #BallLink{
+          width: 50px;
+        }
+        #valLink{
+          height: 40px;
+        }
+      }  
+    }
+    .ValCharaContainer{
+      width: 90%;
+      height: auto;
+      flex-wrap: wrap;
+      background-color: rgba(128, 128, 128, 0.274);
+      justify-content: space-evenly;
+      margin: auto;
+      .ValCharaInfo{
+        width: 40% !important;
+      }
+    }  
+  }
+  @media only screen and (min-width:676px)and (max-width:750px){
+    background-image: url(../resource/ValBack.png);
+    .header{
+      ul{
+        margin-right: 0;
+        .Phone{
+          display: none;
+        }
+        #homeLink{
+          width: 50px;
+        }
+        #BallLink{
+          width: 50px;
+        }
+        #valLink{
+          height: 40px;
+        }
+      }  
+    }
+    .ValCharaContainer{
+      width: 90%;
+      height: auto;
+      flex-wrap: wrap;
+      background-color: rgba(128, 128, 128, 0.274);
+      justify-content: space-evenly;
+      margin: auto;
+      .ValCharaInfo{
+        width: 40% !important;
+      }
+    }  
+  }
+  @media only screen and (min-width:751px)and (max-width:1050px){
+    background-image: url(../resource/ValBack.png);
+    .header{
+      ul{
+        margin-right: 0;
+        .Phone{
+          display: none;
+        }
+        #homeLink{
+          width: 50px;
+        }
+        #BallLink{
+          width: 50px;
+        }
+        #valLink{
+          height: 40px;
+        }
+      }  
+    }
+    .ValCharaContainer{
+      width: 90%;
+      height: auto;
+      flex-wrap: wrap;
+      background-color: rgba(128, 128, 128, 0.274);
+      justify-content: space-evenly;
+      margin: auto;
+      .ValCharaInfo{
+        width: 30% !important;
+      }
+    }  
+  }
+  @media only screen and (min-width:1051px)and (max-width:1500px){
+    background-image: url(../resource/ValBack.png);
+    .header{
+      ul{
+        margin-right: 0;
+        .Phone{
+          display: none;
+        }
+        #homeLink{
+          width: 50px;
+        }
+        #BallLink{
+          width: 50px;
+        }
+        #valLink{
+          height: 40px;
+        }
+      }  
+    }
+    .ValCharaContainer{
+      width: 90%;
+      height: auto;
+      flex-wrap: wrap;
+      background-color: rgba(128, 128, 128, 0.274);
+      justify-content: space-evenly;
+      margin: auto;
+      .ValCharaInfo{
+        width: 22% !important;
+        .CharaBox{
+          height: 330px !important;
+        }
+      }
+    }  
+  }
+  @media only screen and (min-width:1501px){
+    background-image: url(../resource/ValBack.png);
+    .header{
+      ul{
+        margin-right: 0;
+        .Phone{
+          display: none;
+        }
+        #homeLink{
+          width: 50px;
+        }
+        #BallLink{
+          width: 50px;
+        }
+        #valLink{
+          height: 40px;
+        }
+      }  
+    }
+    .ValCharaContainer{
+      width: 90%;
+      height: auto;
+      flex-wrap: wrap;
+      background-color: rgba(128, 128, 128, 0.274);
+      justify-content: space-evenly;
+      margin: auto;
+      .ValCharaInfo{
+        width: 18% !important;
+        .CharaBox{
+          height: 350px !important;
+        }
+      }
+    }  
+  }
+
+
+  .header{
+    background-color: rgba(128, 128, 128, 0.64);
+    display: flex;
+    align-items: center;
+    padding: 2rem 2rem;
+    h1{
+      margin-top: 1rem;
+      color:red;
+      text-shadow:
+      3px 3px 3px black, -3px -3px 3px black,
+     -3px 3px 3px black,  3px -3px 3px black,
+      3px 0px 3px black, -3px -0px 3px black,
+      0px 3px 3px black,  0px -3px 3px black;        
+    }
+
+    .header__nav{
+      display: flex;
+      margin-left: auto;
+      list-style-type: none;
+      a{
+        margin: 1rem;
+        font-size: 20px;
+      }
+    }
+  }
+  .ValCharaContainer{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-top: 2rem;
+    .ValCharaInfo{
+      width: 60%;
+      height: auto;
+      background-color: black;
+      color: white; 
+      border: 1px white solid; 
+      border-radius: 10px;
+      margin-bottom: 1rem;
+      .CharaBox{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: 300px;
+        position: relative;
+        .charaBack{
+          width: 100%;
+          max-height: 100%;
+          filter: brightness(30%);
+          position: absolute;
+        }
+        .charaImg{
+          width: 100%;
+          max-height: 100%;
+          position: absolute;
+          top: 30px;
+        }
+  
+      }
+    }
+  }
+}

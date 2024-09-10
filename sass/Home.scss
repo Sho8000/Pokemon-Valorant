@@ -1,0 +1,135 @@
+body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@media only screen and (max-width:599px){
+  #HomePage{
+    .Poster{
+      flex-direction: column;
+      align-items: center;
+      h1{
+        font-size: 28px !important;
+        bottom: 48% !important;
+      }
+      h2{
+        font-size: 20px !important;
+        bottom: 44% !important;
+      }
+      #PokemonPart{
+        width: 100% !important;
+        height: 50% !important;
+      }   
+      #ValPart{
+        align-items: center;
+        width: 100% !important;
+        height: 50% !important;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width:600px) and (max-width:999px){
+  #HomePage{
+    .Poster{
+      flex-direction: column;
+      align-items: center;
+      h1{
+        font-size: 40px !important;
+        bottom: 46% !important;
+      }
+      h2{
+        font-size: 32px !important;
+        bottom: 40% !important;
+      }
+      #PokemonPart{
+        width: 100% !important;
+        height: 50% !important;
+      }   
+      #ValPart{
+        align-items: center;
+        width: 100% !important;
+        height: 50% !important;
+      }
+    }
+  }
+}
+
+
+#HomePage{
+  .Poster{
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    position: relative;
+    h1{
+      color: white;
+      text-shadow:
+      3px 3px 3px black, -3px -3px 3px black,
+     -3px 3px 3px black,  3px -3px 3px black,
+      3px 0px 3px black, -3px -0px 3px black,
+      0px 3px 3px black,  0px -3px 3px black;          
+      position: absolute;
+      font-size: 48px;
+      z-index: 1;
+      bottom: 7%;
+      #HomeTitlePoke{
+        color: yellow;
+        text-shadow:
+        3px 3px 3px blue, -3px -3px 3px blue,
+       -3px 3px 3px blue,  3px -3px 3px blue,
+        3px 0px 3px blue, -3px -0px 3px blue,
+        0px 3px 3px blue,  0px -3px 3px blue;          
+      }
+      #HomeTitleVal{
+        color: red;
+        text-shadow:
+        3px 3px 3px black, -3px -3px 3px black,
+       -3px 3px 3px black,  3px -3px 3px black,
+        3px 0px 3px black, -3px -0px 3px black,
+        0px 3px 3px black,  0px -3px 3px black;          
+      }
+    }
+    h2{
+      color: white;
+      text-shadow:
+      3px 3px 3px black, -3px -3px 3px black,
+     -3px 3px 3px black,  3px -3px 3px black,
+      3px 0px 3px black, -3px -0px 3px black,
+      0px 3px 3px black,  0px -3px 3px black;          
+      position: absolute;
+      font-size: 40px;
+      z-index: 1;
+      bottom: 0%;
+    }
+    #PokemonPart{
+      display: flex;
+      justify-content: center;
+      background-color: aquamarine;
+      width: 50%;
+      height: 100%;
+      overflow: hidden;
+      #PokPoster{
+        height: 100%;
+        filter: brightness(30%);
+      }
+      #PokPoster:hover{
+        filter: 
+          brightness(100%);
+      }
+    }   
+    #ValPart{
+      display: flex;
+      justify-content: center;
+      width: 50%;
+      overflow: hidden;
+      #valPoster{
+        height: 100%;
+        filter: brightness(30%);
+      }
+      #valPoster:hover{
+        filter: brightness(100%);
+      }
+    }
+  }
+}
